@@ -58,6 +58,9 @@ App.post("/Login", (req, res)=>{
       } 
   })
 })
+App.use("/", (req, res)=>{
+  res.send("bienvenu test N°0 reussi 1")
+})
 App.listen(3001, () => {
   console.log("serveur pret à executer sur le port 3001 !");
 });
