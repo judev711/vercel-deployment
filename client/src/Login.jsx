@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:3001/Login", values)
+      .post("http://localhost:3001/", values)
       .then((res) => {
         console.log("Response:", res.data); // Pour déboguer
         if (res.data.status == "Succes !") {

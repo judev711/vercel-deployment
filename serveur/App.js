@@ -22,7 +22,7 @@ const db = mysql.createConnection({
 
 App.post("/Register",(req, res)=>{
   const sql = "INSERT INTO clone (`name`, `email`, `password`) VALUE (?)";
-  bcrypt.hash(req.body.password.toString(), salt, (error, hash)=>{
+  bcrypt.hash(req.body.password, salt, (error, hash)=>{
     if (error) return (res.json({error: "Error for hassing password"}));
      const values = [
       req.body.name,
@@ -38,7 +38,7 @@ App.post("/Register",(req, res)=>{
  
 })
 
-App.post("/Login", (req, res)=>{
+App.post("/", (req, res)=>{
   const sql = " SELECT * FROM clone WHERE email = ? ";
   db.query(sql, [req.body.email], (err, data)=>{
     if(err) return res.json({Error: "Erreur de requete sql"});
@@ -58,9 +58,7 @@ App.post("/Login", (req, res)=>{
       } 
   })
 })
-App.use("/", (req, res)=>{
-  res.send("bienvenu test N°0 reussi 1")
-})
+
 App.listen(3001, () => {
   console.log("serveur pret à executer sur le port 3001 !");
 });
