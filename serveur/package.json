@@ -1,0 +1,20 @@
+{
+  "name": "serveur",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "start": "nodemon App.js"
+  }
+}
