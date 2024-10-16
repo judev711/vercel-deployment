@@ -20,7 +20,7 @@ function Login() {
       .then((res) => {
         console.log("Response:", res.data); // Pour déboguer
         if (res.data.status == "Succes !") {
-          navigate("/");
+          navigate("/Home");
         } else {
           alert("Error in navigation");
         }
