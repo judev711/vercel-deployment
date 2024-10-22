@@ -31,10 +31,15 @@ function Login() {
       });
   };
   return (
-    <div className="w-screen max-sm:text-xs   h-screen bg-blue-300 shadow-2xl">
-      <div className="container pt-28 flex justify-center ">
-        <div className="bg-white w-1/3 p-5  rounded-md">
-          <h1 className=" max-sm:text-xs  font-bold text-2xl mb-3">Sign-In </h1>
+    <div className="w-screen max-sm:text-[16px]   h-screen bg-blue-300 shadow-2xl fixed ">
+      <div className="  flex justify-center ">
+        <div
+          className="bg-violet-200 w-1/3 max-sm:mt-12 sm:mt-12 p-5 max-sm:w-[20rem]  
+        max-sm:h-[500px] rounded-md max-sm:space-y-12"
+        >
+          <h1 className=" max-sm:text-[20px]  font-extrabold text-2xl mb-3 bg-blue-400 p-2 rounded-md">
+            Sign-In{" "}
+          </h1>
           <form onSubmit={handleSubmit}>
             {/* enter your email */}
             <div className="mb-3 flex flex-col">
@@ -67,24 +72,24 @@ function Login() {
               />
             </div>
             {/* sign up */}
-            <div className="mb-4">
-            <Link to="/Home">
-              <button className="bg-emerald-500 text-white text-xl w-full p-3 font-bold rounded-md hover:bg-yellow-200 hover:text-black max-sm:text-xs">
-                Login
-              </button>
+            <div className="mb-4 max-sm:mt-10">
+              <Link to="/Home">
+                <button className="bg-emerald-500 text-white text-xl w-full p-3 font-bold rounded-md hover:bg-yellow-200 hover:text-black max-sm:text-xs">
+                  Login
+                </button>
               </Link>
               <p className="text-xs font-semibold text-center">
                 Your agree to aour terms and policies{" "}
               </p>
             </div>
             <Link to="/register">
-              <button
-                
-                className="bg-gray-600 w-[100%] text-white  text-xl text-center font-bold p-2 rounded-md hover:bg-amber-200 max-sm:text-xs"
-              >
+              <button className="bg-gray-600 w-[100%] text-white  text-xl text-center font-bold p-3 rounded-md hover:bg-amber-200 max-sm:text-xs max-sm:mt-4">
                 Create Account
               </button>
             </Link>
+            <div className="max-sm:mt-3">
+              <p className="font-extrabold md:hidden">~~~Theodore711 De La Vega~~~</p>
+            </div>
           </form>
         </div>
       </div>

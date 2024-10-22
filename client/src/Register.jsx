@@ -30,7 +30,7 @@ function Register() {
   };
   return (
     <div className=" max-sm:text-xs w-screen max-w-xs: h-screen bg-emerald-500 fixed">
-      <div className="container   max-md:text-xs max-sm:p-0 max-sm:py-20 mx-auto flex justify-center p-20">
+      <div className="max-md:text-xs max-sm:w-[800px] max-sm:py-20 mx-auto flex justify-center p-20">
         <div className="bg-white w-1/3 p-5 rounded-md">
           <h1 className=" max-sm:text-xs font-bold text-2xl mb-3">Sign-Up </h1>
           <form onSubmit={handleSubmit}>
