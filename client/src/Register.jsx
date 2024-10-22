@@ -29,10 +29,10 @@ function Register() {
       });
   };
   return (
-    <div className="w-screen h-screen bg-emerald-500">
-      <div className="container mx-auto flex justify-center p-20">
+    <div className=" max-sm:text-xs w-screen max-w-xs: h-screen bg-emerald-500 fixed">
+      <div className="container   max-md:text-xs max-sm:p-0 max-sm:py-20 mx-auto flex justify-center p-20">
         <div className="bg-white w-1/3 p-5 rounded-md">
-          <h1 className="font-bold text-2xl mb-3">Sign-Up 😎</h1>
+          <h1 className=" max-sm:text-xs font-bold text-2xl mb-3">Sign-Up </h1>
           <form onSubmit={handleSubmit}>
             <div className="mb-3 flex flex-col">
               <label htmlFor="name">
@@ -83,7 +83,8 @@ function Register() {
             <div className="mb-4">
               <button
                 type="submit"
-                className="bg-emerald-500 text-white text-xl w-full p-3 font-bold rounded-md hover:bg-yellow-200 hover:text-black"
+                className="bg-emerald-500 text-white text-xl w-full p-3 font-bold rounded-md hover:bg-yellow-200 hover:text-black max-sm:text-[10px]
+                max-sm:p-1"
               >
                 Sign Up
               </button>
@@ -91,10 +92,10 @@ function Register() {
                 You agree to our terms and policies.
               </p>
             </div>
-            <Link to="/login">
+            <Link to="/">
               <button
                 type="button"
-                className="bg-gray-600 w-full text-white text-xl font-bold p-2 rounded-md hover:bg-amber-200"
+                className="bg-gray-600 w-full text-white text-xl font-bold p-2 rounded-md hover:bg-amber-200 max-sm:text-xs max-sm:p-2"
               >
                 Login
               </button>

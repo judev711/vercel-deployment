@@ -31,10 +31,10 @@ function Login() {
       });
   };
   return (
-    <div className="w-screen h-screen bg-blue-300 shadow-2xl">
-      <div className="container mx-auto flex justify-center p-20">
-        <div className="bg-white w-1/3 p-5 rounded-md">
-          <h1 className="font-bold text-2xl mb-3">Sign-In </h1>
+    <div className="w-screen max-sm:text-xs   h-screen bg-blue-300 shadow-2xl">
+      <div className="container pt-28 flex justify-center ">
+        <div className="bg-white w-1/3 p-5  rounded-md">
+          <h1 className=" max-sm:text-xs  font-bold text-2xl mb-3">Sign-In </h1>
           <form onSubmit={handleSubmit}>
             {/* enter your email */}
             <div className="mb-3 flex flex-col">
@@ -68,9 +68,11 @@ function Login() {
             </div>
             {/* sign up */}
             <div className="mb-4">
-              <button className="bg-emerald-500 text-white text-xl w-full p-3 font-bold rounded-md hover:bg-yellow-200 hover:text-black">
+            <Link to="/Home">
+              <button className="bg-emerald-500 text-white text-xl w-full p-3 font-bold rounded-md hover:bg-yellow-200 hover:text-black max-sm:text-xs">
                 Login
               </button>
+              </Link>
               <p className="text-xs font-semibold text-center">
                 Your agree to aour terms and policies{" "}
               </p>
@@ -78,7 +80,7 @@ function Login() {
             <Link to="/register">
               <button
                 
-                className="bg-gray-600 w-[100%] text-white  text-xl text-center font-bold p-2 rounded-md hover:bg-amber-200"
+                className="bg-gray-600 w-[100%] text-white  text-xl text-center font-bold p-2 rounded-md hover:bg-amber-200 max-sm:text-xs"
               >
                 Create Account
               </button>
